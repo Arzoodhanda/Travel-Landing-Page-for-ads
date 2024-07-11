@@ -1,0 +1,32 @@
+
+ul.quci-li {
+    padding: 10px 6px;
+    
+    margin-bottom: 19px;
+}
+ul.quci-li .hht_lnk {
+    width: 16%;
+    display: inline-block;
+}
+ul.quci-con {
+    padding: 10px 6px;
+   
+}
+ul.quci-con li {
+    width: 30%;
+    display: inline-block;
+}
+
+@media (min-width:320px) and (max-width:767px){
+    ul.quci-li .hht_lnk {width: 100%;}
+    ul.quci-con li {width: 100%;}
+}
+
+
+.box_content svg{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: 0 auto;
+    color: blue;
+}

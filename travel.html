@@ -1,0 +1,1053 @@
+<!doctype html>
+<html lang="en">
+  
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Ajara Teach </title>
+	<meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/page-style.css">
+		<link rel="stylesheet" href="css/newcss-add.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+	
+
+   
+   <nav class="navbar navbar-expand-lg navbar-light">
+		  <div class="container">
+		  <a class="navbar-brand" href="index.html"> Arzoo Dhanda </a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="index.html"> Home </a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="about-us.html"> About us </a>
+			  </li>
+              <li class="nav-item">
+				<a class="nav-link" href="travel.html"> Travel </a>
+			  </li>
+			 
+			  
+			  <li class="nav-item">
+				<a class="nav-link" href="contact-us.html"> Contact Us </a>
+			  </li>
+			</ul>
+			
+			<div class="toll-free-number">
+		        <h6> Book Online (OR) Call Us </h6>
+				<a href="tel:+91 9518412326"> +91 9518412326 </a>		
+		  </div>
+		  </div>
+		  </div>
+		</nav>	   <!-- HEADER CODE START -->
+    <div class="my_bannerT" style="background:url(images/img-4.jpg) left top no-repeat; padding:100px 0 150px; background-size: cover; background-position: center;">
+       <div class="container">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="mySearchs">
+                   <div class="hgdft_head">
+                      <h1> Compare & Book Flights On Over 600 Airlines </h1>
+                   </div>
+                   <!-- FIRST TAB END -->
+
+
+                   <iframe border="0" src="https://www.trip.com/partners/ad/S473447?Allianceid=3321936&SID=15287712&trip_sub1=" style="width:900px;height:200px" frameborder="0" scrolling="no" style="border:none" id="S473447"></iframe>
+  
+
+<script>
+
+function addDays(date, days) {
+  var result = new Date(date);
+  result.setDate(result.getDate() + days);
+  return result;
+}
+
+function formatDate(date)
+{
+var d = new Date(date);
+var curr_date = d.getDate();
+var curr_month = d.getMonth() + 1; //Months are zero based
+var curr_year = d.getFullYear();
+return curr_date + "-" + curr_month + "-" + curr_year;  
+}
+
+    jQuery(function($) {
+           $("#datepicker").datepicker({
+               minDate: 'D',
+               dateFormat: "yy-mm-dd",
+               // defaultDate: "+1w",
+               numberOfMonths: Resolution(),
+               onClose: function(selectedDate) {
+                   var s = selectedDate.split('-');
+                   
+                   $("#datepicker2").datepicker("option", "minDate", selectedDate);
+                   $("#datepicker2").select();
+                   return false;
+               }
+           });
+       });
+   
+       jQuery(function($) {
+            $("#datepicker2").datepicker({
+               minDate: '+1D',
+               dateFormat: "yy-mm-dd",
+               // defaultDate: "+1w",
+               numberOfMonths: Resolution(),
+               onClose: function(selectedDate) {
+                   var s = selectedDate.split('-');
+                   $('#datepicker2').val(d_dat);
+                   $('#datepicker2_label').html(s[1] + '-' + s[3]);
+                   return false;
+               }
+           });
+       });
+</script>
+
+<script>
+
+      jQuery(function($) {
+        $("#datepickerH").datepicker({
+            minDate: 'D',
+            dateFormat: "dd-m-yy",
+            // defaultDate: "+1w",
+            numberOfMonths: Resolution(),
+            onClose: function(selectedDate) {
+                $('#depdth').val(selectedDate);
+                $('#datepickerH').val(selectedDate);
+                $("#datepickerH2").datepicker("option", "minDate", selectedDate);
+                $("#datepickerH2").select();
+                return false;
+            }
+        });
+    });
+
+
+
+    jQuery(function($) {
+        $("#datepickerH11").datepicker({
+            minDate: 'D',
+            dateFormat: "M-D-dd-yy",
+            // defaultDate: "+1w",
+            numberOfMonths: Resolution(),
+            onClose: function(selectedDate) {
+                alert(selectedDate);
+                var s = selectedDate.split('-');
+                var depdate = s[0] + '-' + s[2] + '-' + s[3];
+                $('#depdth').val(depdate);
+                var d_dat = s[0] + '-' + s[2];
+                $('#datepickerH').val(d_dat);
+                $('#datepicker_label').html(s[1] + '-' + s[3]);
+                $("#datepickerH2").datepicker("option", "minDate", selectedDate);
+                $("#datepickerH2").select();
+                return false;
+            }
+        });
+    });
+
+    jQuery(function($) {
+        $("#datepickerH2").datepicker({
+            minDate: '+1D',
+            dateFormat: "dd-m-yy",
+            // defaultDate: "+1w",
+            numberOfMonths: Resolution(),
+            onClose: function(selectedDate) {
+                
+                $('#retdth').val(selectedDate);
+               
+                $('#datepickerH2').val(selectedDate);
+                return false;
+            }
+        });
+    });
+	
+	
+	
+</script>
+
+<script>
+    jQuery(function($) {
+        $("#datepicker_car").datepicker({
+            minDate: 'D',
+            dateFormat: "M-D-dd-yy",
+            // defaultDate: "+1w",
+            numberOfMonths: Resolution(),
+            onClose: function(selectedDate) {
+                var s = selectedDate.split('-');
+                var depdate = s[0] + '-' + s[2] + '-' + s[3];
+                $('#depDt').val(depdate);
+                var d_dat = s[0] + '-' + s[2];
+                $('#datepicker_car').val(d_dat);
+                $('#datepicker_label').html(s[1] + '-' + s[3]);
+                $("#datepicker_car2").datepicker("option", "minDate", selectedDate);
+                $("#datepicker_car2").select();
+                return false;
+            }
+        });
+    });
+
+    jQuery(function($) {
+        $("#datepicker_car2").datepicker({
+            minDate: '+1D',
+            dateFormat: "M-D-dd-yy",
+            // defaultDate: "+1w",
+            numberOfMonths: Resolution(),
+            onClose: function(selectedDate) {
+                var s = selectedDate.split('-');
+                var depdate = s[0] + '-' + s[2] + '-' + s[3];
+                $('#retDt').val(depdate);
+                var d_dat = s[0] + '-' + s[2];
+                $('#datepicker_car2').val(d_dat);
+                $('#datepickerH2_label').html(s[1] + '-' + s[3]);
+                return false;
+            }
+        });
+    });
+</script>
+
+
+
+
+
+<script>
+
+	
+function first_form()
+	{
+	var a=document.getElementById("location").value;	
+	var b=document.getElementById("location2").value;	
+	
+	document.getElementById("location").value=a.substring(0,3);	
+	document.getElementById("location2").value=b.substring(0,3);	
+	
+	
+	
+	}
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#btm_clk").click(function() {
+            $(".psg_dls").toggle('slideUp');
+        });
+        $(".btn_done").click(function() {
+
+            var total = all_pesenger();
+            var classType = $("#classType").val();
+           if(classType=='Y'){ classType = 'Economy'; }
+           if(classType=='S'){ classType = 'Premium Economy'; }
+           if(classType=='C'){ classType = 'Business Class'; }
+           if(classType=='F'){ classType = 'First Class'; }
+           $("#btm_clk").val('Passengers ' + total+','+classType);
+           $(".psg_dls").hide(1000);
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#btm_clkH").click(function() {
+            $(".psg_dls").toggle('slideUp');
+        });
+        $(".btn_doneH").click(function() {
+
+            var total = all_pesenger();
+            $("#btm_clkH").val('Adults/child ' + total);
+            $(".psg_dls").hide('slideUp');
+        });
+    });
+</script>
+
+
+
+<script type="text/javascript">
+    function show_date(data) {
+
+        if (data == 'oneway') {
+            document.getElementById("datepicker2").disabled = true;
+            var a = document.getElementById("datepicker2");
+            a.removeAttribute("required");
+        } else if (data == 'roundtrip') {
+            document.getElementById("datepicker2").disabled = false;
+            var b = document.getElementById("datepicker2");
+            b.setAttribute("required", true);
+        }
+
+    }
+</script>
+
+<script>
+    jQuery(function($) {
+
+        $('input').focus(function() {
+            $(this).removeAttr('placeholder');
+        });
+
+    });
+
+
+function clearInput2(){
+      var getValue= document.getElementById("location");
+        if (getValue.value !="") {
+            getValue.value = "";
+        }
+ }
+ 
+ function clearInput(){
+      var getValue= document.getElementById("location2");
+        if (getValue.value !="") {
+            getValue.value = "";
+        }
+ }
+</script>
+
+
+  
+  <script>
+       jQuery(function($) {   
+//alert("hiiii");
+   var arr = [];
+$.getJSON('airport.json', function(data) {
+    $.each(data, function(key, value) {
+		//alert(value);
+		var codes = value.substring(0,3);
+		//alert(codes);
+        if ($.inArray(value, arr) === -1) {
+            arr.push(value);
+        }
+    })
+});
+//console.log(arr);
+$("#location").autocomplete({
+    source: function( request, response ) {
+		var stringLength = $.ui.autocomplete.escapeRegex( request.term ).length;
+		//alert(stringLength);
+               var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+			   var matcher2 = new RegExp( $.ui.autocomplete.escapeRegex( request.term )+"+", "i" );
+			  
+			   //alert(matcher);
+			   var isData = 1;
+             response( $.grep( arr, function( item ){
+				 
+				 //alert(item);
+				 //alert(matcher.test( item ));
+				 
+				 if(stringLength<=3)
+                    					 
+				 {
+					 if(matcher.test( item ))
+					 {
+					   isData = 22;
+					 }
+                       return matcher.test( item );
+					  
+				 }
+				 else
+				 {
+					 if(matcher2.test( item ))
+					 {
+					 isData = 22;
+					 }
+					return matcher2.test( item ); 
+				 }
+				 
+             }) );
+			 //alert(isData);
+			 if(stringLength==3 && isData == 1 )
+				 {
+			 response( $.grep( arr, function( item ){
+				 //alert(item);
+				 //alert(matcher.test( item ));
+				 
+				 
+                       return matcher2.test( item );
+					  
+				 
+				 
+             }) );
+			 }
+    },
+    minLength: 1,
+	change: function (event, ui) {
+         if (ui.item === null) {
+              $(this).val('');
+              $('#location').val('');
+         }
+       },
+       select: function (event, ui) { 
+            // console.log(ui.item.value);
+           $('.fromshort').html(ui.item.value.slice(0,3));
+           $('.fromfull').html(ui.item.value.slice(4));   
+             setTimeout(function () {
+                  $('#location2').focus();
+         }, 1);    
+          }
+});
+
+$("#location2").autocomplete({
+            source: function( request, response ) {
+		var stringLength = $.ui.autocomplete.escapeRegex( request.term ).length;
+		//alert(stringLength);
+               var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+			   var matcher2 = new RegExp( $.ui.autocomplete.escapeRegex( request.term )+"+", "i" );
+			   var isData = 1;
+             response( $.grep( arr, function( item ){
+				 //alert(item);
+				 //alert(matcher.test( item ));
+				 
+				 if(stringLength<=3)
+				 {
+					 if(matcher.test( item ))
+					 {
+					   isData = 22;
+					 }
+                       return matcher.test( item );
+					  
+				 }
+				 else
+				 {
+					 if(matcher2.test( item ))
+					 {
+					 isData = 22;
+					 }
+					return matcher2.test( item ); 
+				 }
+				 
+             }) );
+			 //alert(isData);
+			 if(stringLength==3 && isData == 1 )
+				 {
+			 response( $.grep( arr, function( item ){
+				 //alert(item);
+				 //alert(matcher.test( item ));
+				 
+				 
+                       return matcher2.test( item );
+					  
+				 
+				 
+             }) );
+			 }
+    },
+    minLength: 1,
+	change: function (event, ui) {
+         if (ui.item === null) {
+              $(this).val('');
+              $('#location2').val('');
+         }
+       },
+       select: function (event, ui) {  
+           $('.toshort').html(ui.item.value.slice(0,3));
+           $('.tofull').html(ui.item.value.slice(4));  
+             setTimeout(function () {
+                   $('#datepicker').focus();
+         }, 1);    
+         }
+       });
+	   });
+</script>
+
+<script>
+    function close_btn(id) {
+        var array = id.split("_");
+        var content = array[0];
+        document.getElementById(content).value = '';
+        document.getElementById(id).style.display = 'none';
+        var label_id = content + '_label';
+        if (content == 'location') {
+            $('#' + label_id).html('City Name');
+            $("#location").attr("placeholder", "Airport");
+
+        } else if (content == 'location2') {
+            $('#' + label_id).html('City Name');
+            $("#location2").attr("placeholder", "Airport");
+
+        }
+
+    }
+</script>
+
+<script>
+    function add_rt_passenger() {
+        var infow = $("#InfantsRT").val();
+        var childow = $("#ChildrenRT").val();
+        var adultow = $("#AdultsRT").val();
+        var total = +infow + +childow + +adultow;
+        return total;
+    }
+
+    function all_pesenger() {
+
+        var infow = $("#InfantsRT").val();
+        var childow = $("#ChildrenRT").val();
+        var adultow = $("#AdultsRT").val();
+        var total = +infow + +childow + +adultow;
+        return total;
+    }
+
+    function increase_adult_rt() {
+        var adult_pass = add_rt_passenger();
+        var adult_rt = document.getElementById("AdultsRT").value;
+        if (adult_pass < 9) {
+            var k = parseInt(adult_rt) + 1;
+            document.getElementById("AdultsRT").value = k;
+        }
+
+    }
+
+    function decrease_adult_rt() {
+        var adult_rt = document.getElementById("AdultsRT").value;
+        var InfantsRT = document.getElementById("InfantsRT").value;
+        if (adult_rt != '1') {
+            var k = parseInt(adult_rt) - 1;
+            document.getElementById("AdultsRT").value = k;
+
+            if (InfantsRT >= adult_rt) {
+                var k = parseInt(InfantsRT) - 1;
+                document.getElementById("InfantsRT").value = k;
+            }
+
+        }
+    }
+
+    function increase_child_rt() {
+        var adult_pass = add_rt_passenger();
+        var adult_rt = document.getElementById("ChildrenRT").value;
+        if (adult_pass < 9) {
+
+            var k = parseInt(adult_rt) + 1;
+            document.getElementById("ChildrenRT").value = k;
+        }
+
+    }
+
+    function decrease_child_rt() {
+        var adult_rt = document.getElementById("ChildrenRT").value;
+        if (adult_rt != '0') {
+            var k = parseInt(adult_rt) - 1;
+            document.getElementById("ChildrenRT").value = k;
+        }
+    }
+
+    function increase_infant_rt() {
+
+        var total_pass = add_rt_passenger();
+
+        var adult_rt = document.getElementById("AdultsRT").value;
+        var InfantsRT = document.getElementById("InfantsRT").value;
+
+        if (total_pass < 9 && InfantsRT < adult_rt) {
+            var k = parseInt(InfantsRT) + 1;
+            document.getElementById("InfantsRT").value = k;
+        }
+
+    }
+
+    function decrease_infant_rt() {
+        var adult_rt = document.getElementById("InfantsRT").value;
+        if (adult_rt != '0') {
+            var k = parseInt(adult_rt) - 1;
+            document.getElementById("InfantsRT").value = k;
+        }
+    }
+
+    function Resolution() {
+        if (window.innerWidth < 780) {
+            return 1;
+        } else {
+            return 2;
+        }
+    }
+</script>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    
+    <div class="Exclusive_Offers">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3">
+               <div class="box_info box_about">
+                  <div class="box_content">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+ <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+</svg>
+                    <h4>Customer Focus</h4>
+                   <p>Client fulfillment thanks to a skilled and informed staff.</p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="box_info box_about">
+                  <div class="box_content">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+ <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+ <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+</svg>
+                     <h4>Search and fast booking</h4>
+                     <p>Our search engine returns quick results so you may compare over 600 airlines and choose the best route. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="box_info box_about">
+                  <div class="box_content">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-flag" viewBox="0 0 16 16">
+ <path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001M14 1.221c-.22.078-.48.167-.766.255-.81.252-1.872.523-2.734.523-.886 0-1.592-.286-2.203-.534l-.008-.003C7.662 1.21 7.139 1 6.5 1c-.669 0-1.606.229-2.415.478A21 21 0 0 0 3 1.845v6.433c.22-.078.48-.167.766-.255C4.576 7.77 5.638 7.5 6.5 7.5c.847 0 1.548.28 2.158.525l.028.01C9.32 8.29 9.86 8.5 10.5 8.5c.668 0 1.606-.229 2.415-.478A21 21 0 0 0 14 7.655V1.222z"/>
+</svg>
+                    <h4>Discounted flight deals</h4>
+                     <p>Particularly low prices offer good value for the money. </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-3">
+               <div class="box_info box_about">
+                  <div class="box_content">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+ <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+</svg>
+                     <h4>24 x 7 customer service</h4>
+                    <p>Our multilingual staff is on hand to respond to your inquiries around-the-clock.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+    <div class="tops_flights">
+       <div class="container">
+          <div class="row">
+             <div class="col-md-12">
+                <div class="Medical_heading">
+                   <h2> Top Destinations <span> Flight Routes </span> </h2>
+                </div>
+             </div>
+          </div>
+          <div class="row">
+             <div class="col-md-4">
+                <div class="banner_hdfs">
+                   <div class="wrapper d-flex align-items-center opacity-mask" data-opacity-mask="rgba(0, 0, 0, 0.3)" style="background-color: rgba(0, 0, 0, 0.3);">
+                      <div>
+                         <small>Flight Deals</small>
+                         <h3> What's happening on <br> TripoTravel </h3>
+                         <p> See the reason why India loves to book trips with us </p>
+                         <a href="about-us.html" class="btn_1"> Read more </a>
+                      </div>
+                   </div>
+                   <!-- /wrapper -->
+                </div>
+             </div>
+             <div class="col-md-8">
+                <div class="row">
+                   <div class="col-md-6">
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4> Miami - London  </h4>
+                                     <p> 21-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 31-Aug-2024 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4> Ataturk - Heathrow   </h4>
+                                     <p> 21-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 31-Aug-2024 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4> Las Vegas - Miami  </h4>
+                                     <p> 21-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 31-Aug-20244 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4>  Ataturk - San Francisco  </h4>
+                                     <p> 21-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 31-Aug-2024 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4> Dubai - Paris </h4>
+                                     <p> 19-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 27-Aug-2024 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                   </div>
+                   <div class="col-md-6">
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4> Los Angeles - Paris  </h4>
+                                     <p> 20-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 30-Aug-2024 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4> Chicago - Istanbul  </h4>
+                                     <p> 21-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 29-Aug-2024 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4> Houston - Dubai  </h4>
+                                     <p> 21-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 28-Aug-2024 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4> New York - Istanbul  </h4>
+                                     <p> 24-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 31-Aug-2024 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                      <div class="New_typdl">
+                         <div class="sv_offer"> Save 15%  </div>
+                         <a href="" target="_blank">
+                            <div class="row">
+                               <div class="col-md-8 col-8" style="border-right: solid 1px #d3d3d3;">
+                                  <div class="DL_im">
+                                     <h4> Ataturk - Paris  </h4>
+                                     <p> 23-Aug-2024 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> 31-Aug-2024 </p>
+                                  </div>
+                               </div>
+                               <div class="col-md-4 col-4">
+                                  <div class="DL_im">
+                                     <h6> Round Trip </h6>
+                                     <h3> Book now </h3>
+                                  </div>
+                               </div>
+                            </div>
+                         </a>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    
+    
+    <div class="abbret_us">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <div class="ease_about">
+               <h3> Book Cheap Flights on TripoTravel </h3>
+               <p>Ajara Teach is an online travel platform that caters to people, families, and corporate travelers. Its efficient and effective travel alternatives and pricing are prioritized for our consumers. maintains.</p>
+                 <p>Our goal is to make travel more reasonable by locating cheap airline tickets. To this end, we work with a network of suppliers who serve as wholesalers or consolidators, obtaining the greatest deals on all of the travel options we consider. is able to be cited. The finest possibilities among the numerous results that our technology checks in the background for a single search made by our customers (users) are displayed to users. It provides an easy-to-use interface with an emphasis on locating the most advantageous travel options.</p>
+               <p>More than 600 airlines are our partners. Our goal is to locate and display the most suitable solutions to enable your vacation.</p>
+                 <p>Our success is primarily attributed to our exceptional technology and customer service. We see these two as the cornerstones of a developing company, and we work hard to keep getting better. </p>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<section class="graybg">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="booking">
+               <div class="img_pull_left"> 
+                  <img alt="image" src="images/choices.png"> 
+               </div>
+               <div class="cont_pull_right">
+                 <h4>Seat Allocation</h4>
+                      <p>Make sure you book the correct seat when making your reservation or later on the aircraft. Never forget that not all seats are free; some require payment for allocation. To reserve a spot, give us a call now.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="booking">
+               <div class="img_pull_left"> <img alt="image" src="images/security.png"> </div>
+               <div class="cont_pull_right">
+                  <h4>Specific food request</h4>
+                      <p>To reserve your lunch in advance according to your dietary needs, please get in touch with us. Meals can be scheduled up to 24 hours prior to your flight or when creating a new reservation.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="booking">
+               <div class="img_pull_left"> <img alt="image" src="images/customize.png"> </div>
+               <div class="cont_pull_right">
+                 <h4>Book luggage in advance</h4>
+                      <p>Don't worry about booking your bags at the last minute. For luggage reservations for your flights, get in touch with us. Check your baggage allowance every time you book a reservation.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+    
+	<!-- FOOTER CODE START -->
+    <div class="footer_mains">
+	 <div class="container">
+	
+		<div class="row">	
+          	
+		   <div class="col-md-12">
+		    <div class="foot_heading">
+				<h3> Quick Links </h3>
+			</div>
+		    
+			 <div class="foot_heading">
+				 <ul class="quci-li"> 
+				<li class="hht_lnk"> <a href="about-us.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> About Us  </a> </li>
+  				<li class="hht_lnk"> <a href="disclaimer.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> Disclaimer  </a> </li>
+						 
+				<li class="hht_lnk"> <a href="privacy-policy.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> Privacy Policy </a> </li> 
+  				<li class="hht_lnk"> <a href="refund-policy.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> Refund Policy </a> </li>			 
+				<li class="hht_lnk"> <a href="terms-conditions.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> Terms & Conditions  </a> </li> 
+				<li class="hht_lnk"> <a href="cancellations-policy.html"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+</svg></i> Cancellations Policy  </a> </li> 
+				
+				 </ul>
+				</div>
+			  
+		   </div>
+		   
+		  
+		   
+		   <div class="col-md-12">
+		   <div class="foot_heading">
+		    <h3> Get In Touch </h3>
+		    <ul class="quci-con">
+			<li> <a href="tel:+91 9518412326"> <i class="fa fa-phone gdfhr" aria-hidden="true"></i> +1-323-507-3949 </a> </li>
+		   
+  			<li> <a href="mailto:arzoodhandaa@gmail.com"> <i class="fa fa-envelope gdfhr"></i> arzoodhandaa@gmail.com </a> </li>			 
+			<li> <a href="javascript:void(0)"> <i class="fa fa-map-marker gdfhr" aria-hidden="true"></i> Ajara Teach</a> </li>
+            </ul>			
+			</div>
+		  </div>
+		  </div>
+		
+		<div class="row">	   
+		   <div class="col-md-12">
+			<div class="Disclameee">
+			 <p> <strong>  Disclaimer : </strong>Ajara Teach is a stand-alone internet travel agency with no affiliation to any outside entities.To encourage users to make reservations for hotels, autos, flights, and other travel-related services, we have integrated Trip.com Affiliate Network work affiliate capabilities on our website.Ajara Teach links to Travelpayouts and advertises to generate commission.We adhere to Google Ads standards and use their services to drive traffic to our website.</p>
+			</div>
+		   </div>
+		  </div>
+	  </div>
+	</div>
+	
+	
+	<div class="my_copywrite">
+	 <div class="container">
+	  <div class="row">
+	   <div class="col-md-12">
+		<div class="payment_icons">
+			<ul>
+				
+				<li> <img src="images/icon07.jpg" style="width: 65px; border: solid 1px #c0bec0; border-radius: 2px; padding: 5px;"> </li>
+				<li> <img src="images/pay1.png"> </li>
+				<li> <img src="images/pay2.png"> </li>
+				<li> <img src="images/pay3.png"> </li>
+				<li> <img src="images/pay4.png"> </li>
+				<li> <img src="images/ASTA.jpg"> </li>
+				<li> <img src="images/vtc.jpg"> </li>
+				
+			</ul>
+		 </div>
+		</div>
+	  </div>
+	  
+	  <div class="row">
+	   <div class="col-md-12">
+	    <div class="copyright_sec_">
+		 <p> Copyright © 2023 - 2024  Ajara Teach </a> All Rights Reserved. </p>
+	    </div>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+
+
+
+
+
+	
+	<!-- FOOTER CODE START -->
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="../cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+		$(document).ready(function() {
+			$("#news-slider").owlCarousel({
+				items : 3,
+				itemsDesktop:[1199,3],
+				itemsDesktopSmall:[980,2],
+				itemsMobile : [550,1],
+				pagination:false,
+				navigationText:false
+			});
+		});
+   </script>
+  </body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'},{'ap':'cpsh-oh'},{'server':'p3plzcpnl505721'},{'dcenter':'p3'},{'cp_id':'9949415'},{'cp_cl':'8'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='../img1.wsimg.com/signals/js/clients/scc-c2/scc-c2.min.js'></script>
+<!-- Mirrored from www.Ajara Teach/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jul 2024 07:22:39 GMT -->
+</html>
